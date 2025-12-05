@@ -273,9 +273,11 @@
                     </ul>
 
                     <!-- Formulario de búsqueda -->
-                     <form class="header__form-buscar">
+                     <form class="header__form-buscar" id="headerForm">
                         <span class="header__form-lupa">🔍</span>
-                        <input
+                        <input 
+                            id="buscarReceta"
+                            name="buscarReceta"
                             type="search"
                             class="header__input-buscar"
                             placeholder="Buscar receta..."
@@ -300,18 +302,28 @@
             <nav class="desplegable" style="display: none;" id="nav">
                 <ul class="desplegable__list">
                     <li class="desplegable__item">
-                        <a class="desplegable__link" href="#">Item 1</a>
+                        <a class="desplegable__link" href="#">Inicio</a>
                     </li>
                     <li class="desplegable__item">
-                        <a class="desplegable__link" href="#">Item 2</a>
+                        <a class="desplegable__link" href="#">Recetas</a>
                     </li>
                     <li class="desplegable__item">
-                        <a class="desplegable__link" href="#">Item 3</a>
-                    </li>
-                    <li class="desplegable__item">
-                        <a class="desplegable__link" href="#">Item 4</a>
+                        <a class="desplegable__link" href="#">Nosotros</a>
                     </li>
                 </ul>
+
+                <!-- ***HAY QUE AÑADIR INPUT DE BÚSQUEDA??? -->
+                 <form class="header__form-buscar" id="headerForm">
+                    <span class="header__form-lupa">🔍</span>
+                    <input 
+                        id="buscarReceta"
+                        name="buscarReceta"
+                        type="search"
+                        class="header__input-buscar"
+                        placeholder="Buscar receta..."
+                    />
+                 </form>
+                 
             </nav>
 
             <!-- Contenido principal -->
