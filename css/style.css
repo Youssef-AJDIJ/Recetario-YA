@@ -36,10 +36,6 @@
   box-sizing: border-box;
 }
 
-
-
-
-
 body {
   font-family: var(--font-family-system);
   background-color: var(--color-bg);
@@ -50,7 +46,7 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 /* =================================
@@ -71,7 +67,6 @@ HEADER
   width: 200px;
 }
 
-
 /* Header - Desktop (navegación + buscador) */
 .header__desktop {
   display: none;
@@ -90,8 +85,6 @@ HEADER
   display: flex;
   gap: var(--space-md);
 }
-
-
 
 /* Header - Link del menú */
 .header__link {
@@ -115,8 +108,11 @@ HEADER
 }
 
 .header__form-lupa {
-  font-size: 1rem;
-  color: #999;
+  width: 14px;
+  height: 14px;
+  filter: invert(35%) sepia(10%) saturate(500%);
+
+
 }
 
 .header__input-buscar {
@@ -398,12 +394,3 @@ HEADER
     font-size: 1.5rem;
   }
 }
-
-
-
-
-
-
-
-
-
