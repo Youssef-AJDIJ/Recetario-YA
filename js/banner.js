@@ -26,3 +26,5 @@ export function cambiarImagenBanner() {
 
 // Ejecutar cuando se carga la página
 window.addEventListener("load", cambiarImagenBanner);
+
+
