@@ -49,17 +49,22 @@ body {
 HEADER
 ================================= */
 
-
-.header {
-  max-width: 1000px;
-  background-color: #fff; /* Fondo blanco fijo */
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding: var(--space-md) var(--space-sm) var(--space-sm) var(--space-sm);
+header {
+  width: 100%;
+  background: #fff;
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+.header {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) var(--space-sm) var(--space-sm) var(--space-sm);
+  background: transparent; /* Quita el fondo aquí */
 }
 
 .header__logo-img {
