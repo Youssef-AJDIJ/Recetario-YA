@@ -2,6 +2,7 @@
 @import url("normalize.css");
 @import url("reset.css");
 /* @import url('cookies.css'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
 
 /* =================================
    Variables y Tema (CSS 2025)
@@ -13,7 +14,7 @@
   --color-primary: #d4812a;
 
   /* Tipografía moderna */
-  --font-family-system: system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-family-system: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
 
   /* Espaciado y Tamaños */
   --space-sm: 10px;
@@ -58,7 +59,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
-  background: transparent; /* Quita el fondo aquí */
 }
 
 .header__logo-img {
@@ -87,7 +87,7 @@ header {
 /* Header - Link del menú */
 .header__link {
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 300;
   transition: color 0.3s ease;
 }
 
@@ -197,7 +197,6 @@ header {
   font-family: "Georgia", serif;
   font-size: 3rem;
   font-weight: bold;
-  font-style: italic;
   line-height: 1.2;
   margin-bottom: var(--space-md);
   max-width: 600px;
@@ -331,8 +330,7 @@ header {
 .footer__title {
   font-family: "Georgia", serif;
   font-size: 2rem;
-  font-style: italic;
-  font-weight: bold;
+  font-weight: 500;
   color: var(--color-text-white);
   margin-bottom: var(--space-md);
 }
