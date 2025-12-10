@@ -251,31 +251,46 @@
         ..######...#######..##....##....##....##.....##.####.##....##.########.##.....##
         -->
         <div class="container">
+
+
+            <!-- ******** HEADER ********* -->
+
             <!-- Logo, menu de hamburguesa -->
-            <header class="header">
+            <header>
+                <section class="header">
+
+                
                 <!-- Logo -->
                 <a href="index.html" class="header__logo">
-                    <h1 class="header__logo-text">LOGO</h1>
+                    <img src="img/logo.avif" class="header__logo-img" alt="Sabor & Alma Logo" />
                 </a>
 
                 <!-- para Desktop -->
                 <section class="header__desktop">
                     <ul class="header__menuhtml">
                         <li class="header__item">
-                            <a class="header__link" href="#">Servicios</a>
+                            <a class="header__link" href="#">Inicio</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#">Galeria</a>
+                            <a class="header__link" href="#">Recetas</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#">Contacto</a>
+                            <a class="header__link" href="#">Nosotros</a>
                         </li>
                     </ul>
-                    <!-- Redes la podéis mover al footer si es necesario -->
-                    <ul class="redes">
-                        <li class="redes__facebook">Facebook</li>
-                        <li class="redes__linkedin">Linkedin</li>
-                    </ul>
+
+                    <!-- Formulario de búsqueda -->
+                     <form class="header__form-buscar" id="headerForm">
+                        <img class="header__form-lupa" src="img/svg/lupa.svg" alt="Lupa de búsqueda" />
+                        <input 
+                            id="buscarReceta"
+                            name="buscarReceta"
+                            type="search"
+                            class="header__input-buscar"
+                            placeholder="Buscar receta..."
+                        />
+                     </form>
+
                     <!-- <ul class="idiomas">
                         <li>Español</li>
                         <li>Inglés</li>
@@ -290,58 +305,87 @@
                     id="btn-menu"
                 />
                 <!-- menu desplegable -->
+                 </section>
             </header>
             <nav class="desplegable" style="display: none;" id="nav">
                 <ul class="desplegable__list">
                     <li class="desplegable__item">
-                        <a class="desplegable__link" href="#">Item 1</a>
+                        <a class="desplegable__link" href="#">Inicio</a>
                     </li>
                     <li class="desplegable__item">
-                        <a class="desplegable__link" href="#">Item 2</a>
+                        <a class="desplegable__link" href="#">Recetas</a>
                     </li>
                     <li class="desplegable__item">
-                        <a class="desplegable__link" href="#">Item 3</a>
-                    </li>
-                    <li class="desplegable__item">
-                        <a class="desplegable__link" href="#">Item 4</a>
+                        <a class="desplegable__link" href="#">Nosotros</a>
                     </li>
                 </ul>
+
+                <!-- ***HAY QUE AÑADIR INPUT DE BÚSQUEDA EN SMARTPHONE??? -->
+                 <form class="header__form-buscar" id="headerForm">
+                    <span class="header__form-lupa">🔍</span>
+                    <input 
+                        id="buscarReceta"
+                        name="buscarReceta"
+                        type="search"
+                        class="header__input-buscar"
+                        placeholder="Buscar receta..."
+                    />
+                 </form>
+                 
             </nav>
 
-            <!-- Contenido principal -->
-            <main class="main"></main>
+            <!-- ******** MAIN ********* -->
+            
+            <main class="main">
 
+                <!-- BANNER -->
+                <section class="banner">
+
+                    <img class="banner__image" id="bannerImage" src="img/salmon.avif" alt="">
+                    <!-- el alt se puede cambiar en JavaScript? -->
+
+                    <h3 class="banner__subtitle">RECETA DEL MOMENTO</h3>
+                    <h1 class="banner__title" id="bannerTitle">Salmón Grillado con Espárragos</h1>
+                    <p class="banner__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, omnis! Ut laudantium quos ex neque.
+                    </p>
+
+                    <!-- Botón que lleva a Ver Receta -->
+                     <a href="#"><img class="cuchilloCuchara" src="img/svg/cubiertos.svg" >Ver Receta</a>
+
+                </section>
+
+
+            </main>
+
+
+            <!-- ******** FOOTER ********* -->
             <footer class="footer">
-                <section class="footer__container">
-                    <!-- Información de la empresa -->
-                    <section class="footer__section footer__company">
-                        <h2 class="footer__title">Nombre Empresa</h2>
-                        <address class="footer__address">
-                            <h3>Calle Principal, 123</h3>
-                            <h3>Ciudad, CP 12345</h3>
-                            <h3>Tel: <a href="tel:+34900000000" class="footer__link">900 000 000</a></h3>
-                            <h3>Email: <a href="mailto:info@empresa.com" class="footer__link">info@empresa.com</a></h3>
-                        </address>
-                    </section>
+                <section class="footer__unete">
 
-                    <!-- Enlaces de navegación -->
-                    <nav class="footer__section footer__nav">
-                        <h4 class="footer__title">Navegación</h4>
-                        <ul class="footer__nav-list">
-                            <li class="footer__nav-item">
-                                <a href="#" class="footer__nav-link">Servicios</a>
-                            </li>
-                            <li class="footer__nav-item">
-                                <a href="#" class="footer__nav-link">Galería</a>
-                            </li>
-                            <li class="footer__nav-item">
-                                <a href="#" class="footer__nav-link">Contacto</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <!-- Icono de email -->
+                     <img src="img/svg/email.svg"  class="iconoEmail">
+
+                    <h4 class="footer__title">Únete a nuestra cocina</h4>
+
+                    <p class="footer__description">
+                        Recibe recetas semanales, trucos de chef y mucho amor directamente en tu bandeja de entrada.
+                    </p>
+
+                    <form class="footer__form" id="footerForm" action="#" method="post">
+                        <input 
+                            class="footer__input" 
+                            id="email" 
+                            type="email" 
+                            name="email" 
+                            placeholder="tu@correo.com" 
+                            required 
+                        />
+                        <button type="submit" class="footer__button" id="footerBtn">Suscribir</button>
+                </section>
+
 
                     <!-- Legal y privacidad -->
-                    <section class="footer__section footer__legal">
+                    <!-- <section class="footer__section footer__legal">
                         <h4 class="footer__title">Legal</h4>
                         <ul class="footer__legal-list">
                             <li class="footer__legal-item">
@@ -357,30 +401,15 @@
                                 <a href="#" class="footer__link">Términos y Condiciones</a>
                             </li>
                         </ul>
-                    </section>
+                    </section> -->
 
-                    <!-- Redes sociales -->
-                    <section class="footer__section footer__social">
-                        <h4 class="footer__title">Síguenos</h4>
-                        <ul class="footer__social-list">
-                            <li class="footer__social-item">
-                                <a href="#" class="footer__social-link" aria-label="Facebook">
-                                    Facebook
-                                </a>
-                            </li>
-                            <li class="footer__social-item">
-                                <a href="#" class="footer__social-link" aria-label="LinkedIn">
-                                    LinkedIn
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
-                </section>
+
+                
 
                 <!-- Copyright y cookies banner -->
-                <section class="footer__bottom">
+                <!-- <section class="footer__bottom">
                     <article class="footer__copy">
-                        <p>&copy; 2025 Nombre Empresa. Todos los derechos reservados.</p>
+                        <p>&copy; 2025 Sabor & Alma. Todos los derechos reservados.</p>
                     </article>
                     <article class="footer__cookies-banner" id="cookies-banner">
                         <p class="footer__cookies-text">
@@ -388,11 +417,12 @@
                             <a href="#" class="footer__link">Más información</a>
                         </p>
                     </article>
-                </section>
+                </section> -->
             </footer>
         </div>
 
-        <!-- Un código en JavaScript, que nos ayuda hacer un clic -->
-        <script src="js/main.js"></script>
+        <!-- SCRIPTS -->
+        <script type="module" src="js/main.js"></script>
+        
     </body>
 </html>
